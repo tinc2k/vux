@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "vux",
+  "version": "0.0.1",
+
+  "description": "Vukajlija na latinici sa sivom pozadinom.",
+
+  "author": "Tin Crnković",
+  
+  "content_scripts": [
+    {
+      "matches": ["http://*.vukajlija.com/*", "http://vukajlija.com/*"],
+      "css": ["vux.css"],
+      "js": ["jquery-2.0.3.js", "vux.js"]
+    }
+  ]
+}
